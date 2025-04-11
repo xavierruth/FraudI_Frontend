@@ -1,5 +1,5 @@
 import ContainerImage from "@/componentes/Layout/ContainerImg";
-import Loginform from "@/componentes/UI/Input";
+import LoginForm from "@/componentes/UI/LoginForm";
 
 export default function Login() {
     return(
@@ -9,7 +9,7 @@ export default function Login() {
                     <ContainerImage />  
                 </div>
                 <div className="w-1/2 bg-white h-full flex items-center justify-center">
-                    <Loginform /> 
+                    <LoginForm /> 
                     
                 </div>
             </div>

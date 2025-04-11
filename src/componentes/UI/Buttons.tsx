@@ -31,7 +31,7 @@ export const BTNGhost : React.FC <ButtonProps> = ({title, children, type}) => {
         <button
         title={title}
         type={type}
-        className="font-sans inline-flex max-w-md min-w-xs justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
+        className="font-sans inline-flex  max-w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
             {children}
         </button>
     )

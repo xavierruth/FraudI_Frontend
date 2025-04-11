@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 
-export default function ContainerImage () {
+export default function ContainerImgLog () {
     return( 
         <div className="h-full w-full relative overflow-hidden"> 
             <Image 
