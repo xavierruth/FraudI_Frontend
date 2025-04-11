@@ -14,7 +14,8 @@ import user9 from "@/assets/testimonial-img/user9.png"
 
 export const NavItem = [
 
-    {label: "Início", href: "#inicio"},
+    {label: "Início", to: "#inicio"},
+    {label: "Sobre Nós", href: "#sobre"},
     {label: "Serviços", href: "#servicos"}, 
     {label: "Depoimentos", href: "#depoimentos"},
 ];

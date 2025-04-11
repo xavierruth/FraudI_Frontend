@@ -1,10 +1,20 @@
+'use client'
+
 import Image from "next/image";
 import logo from "@/assets/Logo/LOGO.svg";
 import { NavItem } from "@/constants";
-import { BTNGhost } from "../UI/Buttons";
+import { BTNGhostShort } from "../UI/Buttons";
 import { LogIn } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function NavMenu() {
+
+    const router = useRouter(); 
+    
+    const handlelogin = () => {
+      router.push("/login")
+    }
+
   return (
     <nav className="sticky top-0 z-50 py-4 justify-between bg-[#f9f9fb] backdrop-blur-sm border-b border-[rgba(249,249,251,0.8)]">
         <div className="container px-4 mx-auto relative lg:text-sm">
@@ -23,10 +33,10 @@ export default function NavMenu() {
                     ))}
                 </ul>
                 <div className="hidden lg:flex space-x-4 items-center">
-                    <BTNGhost type="button">
+                    <BTNGhostShort type="button" onClick={handlelogin}>
                         <LogIn className="w-5 h-5 mr-2" />
                         Entrar
-                    </BTNGhost>
+                    </BTNGhostShort>
                 </div>
             </div>
         </div>

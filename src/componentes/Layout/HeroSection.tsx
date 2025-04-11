@@ -1,8 +1,18 @@
+'use client'
+
 import { BTNPrimary } from "../UI/Buttons";
 import Image from "next/image";
 import ImgHome from "@/assets/imgs/Imagem_Home.png"
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+
+    const router = useRouter(); 
+    
+    const handlecadastro = () => {
+      router.push("/cadastro")
+    }
+
     return(
             <section className="w-full h-auto flex items-center justify-center bg-[#0F3D3E]">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -21,7 +31,7 @@ export default function HeroSection() {
 
                         {/* botão primário */}
                         <div className="mt-6">
-                                <BTNPrimary type="button">
+                                <BTNPrimary type="button" onClick={handlecadastro}>
                                     <a href="#">Cadastre-se agora!</a>
                                 </BTNPrimary>
                             </div>
@@ -30,7 +40,7 @@ export default function HeroSection() {
 
 
             {/* Imagem à direita */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 mask-l-from-70% mask-b-from-80%">
                 <Image src={ImgHome} alt="Homem sorrindo com notebook" className="object-cover w-full h-auto" priority/>
             </div>
         </section>

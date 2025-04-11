@@ -24,26 +24,43 @@ export const BTNPrimary: React.FC<ButtonProps> = ({onClick, children, type, disa
     );
 };
 
-//BTotão Secundário
+//BTotão Secundário Pequeno
 
-export const BTNGhost : React.FC <ButtonProps> = ({title, children, type}) => {
+export const BTNGhostShort : React.FC <ButtonProps> = ({onClick, title, children, type}) => {
     return(
         <button
         title={title}
         type={type}
-        className="font-sans inline-flex  max-w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
+        onClick={onClick}
+        className="font-sans inline-flex max-w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
             {children}
         </button>
     )
 };
 
+//Botão Secundário Grande
+
+export const BTNGhost : React.FC <ButtonProps> = ({onClick,title, children, type}) => {
+    return(
+        <button
+        title={title}
+        type={type}
+        onClick={onClick}
+        className="font-sans inline-flex max-w-md min-w-xs justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
+            {children}
+        </button>
+    )
+};
+
+
 // Botão Texto 
 
-export const BTNText : React.FC <ButtonProps> = ({title, children, type}) => {
+export const BTNText : React.FC <ButtonProps> = ({onClick, title, children, type}) => {
     return(
         <button 
         title={title}
         type={type}
+        onClick={onClick}
         className="font-sans inline-flex rounded-lg border-1 border-[#fff] justify-center mt-4 items-center gap-2 px-6 py-3 text-x text-[#6A7282] font-normal mx-auto hover:text-[#007B6B] transition-all duration-200 active:rounded-xl active:border active:border-[#11BFAB]">
             {children}
         </button>
