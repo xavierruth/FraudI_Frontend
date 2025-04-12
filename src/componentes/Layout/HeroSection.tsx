@@ -14,12 +14,12 @@ export default function HeroSection() {
     }
 
     return(
-            <section className="w-full h-auto flex items-center justify-center bg-[#0F3D3E]">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <section className="w-full h-auto flex flex-col-reverse md:flex-row items-center justify-center bg-teal-900 pb-4 md:pb-0">
+                <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
             
                     {/* Texto à esquerda */}
-                    <div className=" text-white">
-                        <h1 className="font-sans text-5xl font-bold leading-tight">
+                    <div className=" text-white flex-col md:flex-row items-center md:items-start gap-6 px-4 md:px-0 text-center md:text-left">
+                        <h1 className="font-sans text-3xl md:text-5xl font-bold leading-tight">
                             Transforme <br />
                             insegurança em <br />
                             confiança com o Fraudi
@@ -40,7 +40,7 @@ export default function HeroSection() {
 
 
             {/* Imagem à direita */}
-            <div className="w-full md:w-1/2 mask-l-from-70% mask-b-from-80%">
+            <div className="w-full md:w-1/2 mask-l-from-70% mask-b-from-40%">
                 <Image src={ImgHome} alt="Homem sorrindo com notebook" className="object-cover w-full h-auto" priority/>
             </div>
         </section>

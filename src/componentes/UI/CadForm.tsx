@@ -16,10 +16,10 @@ export default function CadForm () {
   return (
     <div className="bg-[#F8FEFD] w-full h-full flex flex-col items-center justify-center space-y-6">
       <div className="text-center">
-        <h2 className="font-serif text-3xl font-bold text-[#05453D] mb-2">
+        <h2 className="font-serif text-3xl font-bold text-teal-900 mb-2">
         Cadastre-se e se junte a nós!
         </h2>
-        <p className="font-sans text-base font-normal text-gray-500">
+        <p className="font-sans text-base font-normal text-slate-500">
             Vamos juntos tornar o uso do cartão mais seguro para todos.
         </p>
       </div>

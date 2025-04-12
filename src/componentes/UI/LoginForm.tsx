@@ -41,7 +41,7 @@ export default function LoginForm () {
                 type="email"
                 id="email"
                 placeholder="Digite seu email. Ex: email@text.com.br"
-                className="w-md border border-gray-300 rounded-lg px-4 py-2 text-gray-800 transition-all focus:outline-teal-500 focus:text-black"
+                className="w-md border border-gray-300 rounded-lg px-4 py-2 text-gray-800 transition-all caret-teal-500 focus:text-black"
               />
             </div>
             <div>
@@ -52,7 +52,7 @@ export default function LoginForm () {
                 type="password"
                 id="senha"
                 placeholder="Digite sua senha"
-                className="w-md text-gray-800 border border-gray-300 rounded-lg px-4 py-2 transition-all focus:outline-teal-500 focus:text-black"
+                className="w-md text-gray-800 border border-gray-300 rounded-lg px-4 py-2 transition-all caret-teal-500 focus:text-black"
               />
             </div>
           </div>
