@@ -17,6 +17,9 @@ const inriaSerif = Inria_Serif({
 export const metadata: Metadata = {
   title: "FraduI",
   description: "Combatendo Fraudes com Inteligência Artificial",
+  icons: {
+    icon: '/fraudi_frontend/public/LogoFraudi.png',
+  },
 };
 
 export default function RootLayout({
