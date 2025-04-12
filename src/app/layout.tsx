@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Inria_Serif } from "next/font/google";
 import "./globals.css";
+import Favicon from "@/app/favicon-for-app/favicon.ico"
 
 
 const inter = Inter({
@@ -17,9 +18,7 @@ const inriaSerif = Inria_Serif({
 export const metadata: Metadata = {
   title: "FraudI",
   description: "Combatendo Fraudes com Inteligência Artificial",
-  icons: {
-    icon: '/fraudi_frontend/public/Fraudi.svg',
-  },
+  icons: [{ rel: 'icon', url: Favicon.src }],
 };
 
 export default function RootLayout({
