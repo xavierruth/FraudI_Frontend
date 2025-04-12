@@ -5,7 +5,7 @@ export default function DepoimentosSection() {
   return (
     <section className="max-w-full h-auto items-center justify-center bg-teal-50 py-16 px-2 sm:px-8 lg:px-20">
       <div className="justify-center flex-col md:flex-row mx-auto">
-        <h2 className="font-serif text-center text-teal-500 text-xl sm:text-2xl font-semibold">
+        <h2 className="font-serif text-center text-teal-500 text-xl sm:text-2xl font-semibold mb-12">
           Depoimentos
         </h2>
         <h3 className="font-sans text-center text-teal-900 text-xl sm:text-3xl font-bold mt-2">
