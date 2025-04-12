@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "FraudI",
   description: "Combatendo Fraudes com Inteligência Artificial",
   icons: {
-    icon: '/fraudi_frontend/public/LogoFraudi.png',
+    icon: '/fraudi_frontend/public/Fraudi.svg',
   },
 };
 
