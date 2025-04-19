@@ -31,8 +31,9 @@ export default function FooterSection () {
               <div>
                 <h4 className="font-sans text-sm md:text-base text-teal-50 font-semibold mb-4">Equipe</h4>
                 <ul className="space-y-2">
-                <li><a href="https://www.linkedin.com/in/julianereism/" className="font-sans text-xs md:text-sm no-underline hover:underline hover:text-emerald-300 active:text-purple-300">Juliane Reis</a></li>
-                <li><a href="https://www.linkedin.com/in/ruthxavier/" className="font-sans text-xs md:text-sm no-underline hover:underline hover:text-emerald-300 active:text-purple-300">Ruth Xavier</a></li>
+                <li><a href="https://www.linkedin.com/in/julianereism/" className="font-sans text-xs md:text-sm no-underline hover:underline hover:text-emerald-300 active:text-purple-300">Juliane Reis - Gestão e Backend</a></li>
+                <li><a href="https://www.linkedin.com/in/ruthxavier/" className="font-sans text-xs md:text-sm no-underline hover:underline hover:text-emerald-300 active:text-purple-300">Matheus Custódio - QA</a></li>
+                <li><a href="https://www.linkedin.com/in/ruthxavier/" className="font-sans text-xs md:text-sm no-underline hover:underline hover:text-emerald-300 active:text-purple-300">Ruth Xavier - Design e Frontend</a></li>
                 </ul>
               </div>
             </div>

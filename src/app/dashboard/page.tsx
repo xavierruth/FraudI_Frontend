@@ -9,6 +9,7 @@ import { buscarTransacoes } from "@/service/fraudeservice";
 import FraudeBairro from "@/componentes/Dashboard/fraudeBairro";
 import DistanciaTransacao from "@/componentes/Dashboard/distanciaTransacao";
 import UsoChipFraudes from "@/componentes/Dashboard/usoChip";
+import FooterSection from "@/componentes/Layout/Footer";
 
 export default function Dashboard() {
   const [showModal, setshowModal] = useState(false);
@@ -71,6 +72,7 @@ export default function Dashboard() {
           />
         </Modal>
       </div>
+      <FooterSection/>
     </>
   );
 }

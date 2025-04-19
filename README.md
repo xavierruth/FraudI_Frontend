@@ -19,6 +19,7 @@
 - TypeScript
 - Tailwind CSS
 - Recharts
+- SweetAlert
 - Axios
 
 ## Como rodar localmente 
