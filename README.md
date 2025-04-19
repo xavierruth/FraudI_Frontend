@@ -13,6 +13,7 @@
 - Next.Js
 - TypeScript
 - Tailwind CSS
+- Recharts
 - Axios
 
 ## Como rodar localmente 

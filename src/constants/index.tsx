@@ -1,7 +1,6 @@
 import { FileText, Search, LineChart } from "lucide-react"; 
 
 
-
 import user1 from "@/assets/testimonial-img/user1.png"
 import user2 from "@/assets/testimonial-img/user2.png"
 import user3 from "@/assets/testimonial-img/user3.jpg"
@@ -14,11 +13,44 @@ import user9 from "@/assets/testimonial-img/user9.png"
 
 export const NavItem = [
 
-    {label: "Início", href: "#inicio"},
+    {label: "Início", href: "/home"},
     {label: "Sobre Nós", href: "#sobre"},
     {label: "Serviços", href: "#servicos"}, 
     {label: "Depoimentos", href: "#depoimentos"},
 ];
+
+export const NavItemDash = [
+    {label: "Dashboard", href: "/dashboard"},
+    {label: "Sobre", href: "/sobre"}, 
+    {label: "Voltar para Início", href: "/home"},
+];
+
+export const FieldItem = [
+    { label: "Cidade", name: "cidade", type: "text", kind: "input", placeholder: "Insira o nome da sua Cidade" },
+    { label: "Bairro", name: "bairro", type: "text", kind: "input", placeholder: "Insira o nome do seu Bairro" },
+    { label: "Compra Online", name: "compraOnline", kind: "select", placeholder: "Sua compra foi Online?" },
+    { label: "Distância da Casa (km)", name: "distanciaCasa", type: "number", kind: "input", placeholder: "Insira a distância da compra para sua casa em KM. Ex: 3" },
+    { label: "Distância da Última Transação (km)", name: "distanciaUltimaTransacao", type: "number", kind: "input", placeholder: "Ex: 1.2" },
+    { label: "Razão Média de Compras", name: "razaoMediaCompras", type: "number", kind: "input", placeholder: "Ex: 0.8" },
+    { label: "Loja Repetida", name: "lojaRepetida", kind: "select", placeholder: "A transação foi em uma loja repetida?" },
+    { label: "Usou código de segurança", name: "usoCodigoSeguranca", kind: "select", placeholder: "Código de segurança foi utilizado?" },
+    { label: "Usou chip", name: "usoChip", kind: "select", placeholder: "Transação feita com chip?" },
+    { label: "Histórico de fraude", name: "fraude", kind: "select", placeholder: "Possui histórico de fraude?" },
+  ];
+
+
+  export const LoginItem = [
+    { label: "Email", name: "email", type: "email", component: "input", placeholder: "Digite seu e-mail" },
+    { label: "Senha", name: "senha", type: "password", component: "input", placeholder: "Digite sua senha" },
+  ];
+  
+  export const CadastroItem = [
+    { label: "Nome", name: "nome", type: "text", component: "input", placeholder: "Digite seu nome completo" },
+    { label: "Email", name: "email", type: "email", component: "input", placeholder: "Digite seu e-mail" },
+    { label: "Senha", name: "senha", type: "password", component: "input", placeholder: "Crie uma senha" },
+    { label: "Confirmar Senha", name: "confirmarSenha", type: "password", component: "input", placeholder: "Confirme sua senha" },
+  ];
+  
 
 export const servicos = [
 

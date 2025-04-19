@@ -5,7 +5,6 @@ export default function Inicial() {
   return (
     <div >
       <Home />
-
     </div>
   );
 }

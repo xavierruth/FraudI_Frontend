@@ -17,6 +17,10 @@ export default function LoginForm () {
     router.push("/home")
   }
 
+  const handleDashboard = () => {
+    router.push("/dashboard")
+  }
+
   return (
 
     <div className="bg-[#F8FEFD] w-full h-full flex flex-col items-center justify-center space-y-6">
@@ -41,7 +45,7 @@ export default function LoginForm () {
                 type="email"
                 id="email"
                 placeholder="Digite seu email. Ex: email@text.com.br"
-                className="w-md border border-gray-300 rounded-lg px-4 py-2 text-gray-800 transition-all caret-teal-500 focus:text-black"
+                className=" w-full md:w-md flex border border-gray-300 rounded-lg px-4 py-2 text-gray-800 transition-all caret-teal-500 focus:text-black"
               />
             </div>
             <div>
@@ -52,13 +56,13 @@ export default function LoginForm () {
                 type="password"
                 id="senha"
                 placeholder="Digite sua senha"
-                className="w-md text-gray-800 border border-gray-300 rounded-lg px-4 py-2 transition-all caret-teal-500 focus:text-black"
+                className="w-full md:w-md text-gray-800 border border-gray-300 rounded-lg px-4 py-2 transition-all caret-teal-500 focus:text-black"
               />
             </div>
           </div>
           <div className="space-y-4 mt-10">
             <div className="space-y-3 flex flex-col items-center">
-              <BTNPrimary type="submit">Entrar</BTNPrimary>
+              <BTNPrimary type="button" onClick={handleDashboard}>Entrar</BTNPrimary>
               <BTNGhost type="button" onClick={handlecadastro}>Cadastre-se</BTNGhost>
             </div>
             <div className="flex justify-center">

@@ -5,6 +5,7 @@ interface ButtonProps {
     to?: string; // caminho de rota, para saber se o botão está ativo
     type?: "button" | "submit" | "reset"; // tipo do botão
     disabled?: boolean; // se o botão está desativado
+    onClose?: () => void; 
     
     
 
@@ -18,7 +19,7 @@ export const BTNPrimary: React.FC<ButtonProps> = ({onClick, children, type, disa
         type={type} 
         disabled={disabled} 
         onClick={onClick} 
-        className= "cursor-pointer font-sans inline-flex max-w-md min-w-xs justify-center items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-600 hover:scale-[1.05] active:bg-gradient-to-b active:from-emerald-600 active:to-teal-600 rounded-lg text-slate-900 active:text-slate-50 text-lg font-normal mx-auto transition-all duration-400 ease-in-out active:border-lime-100 active:shadow-[0_0_0_1px_#69D3C1]">
+        className= "cursor-pointer font-sans inline-flex w-md justify-center items-center gap-2 px-6 py-3 bg-emerald-400 hover:bg-emerald-600 hover:scale-[1.05] active:bg-gradient-to-b active:from-emerald-600 active:to-teal-600 rounded-lg text-slate-900 active:text-slate-50 text-lg font-normal mx-auto transition-all duration-400 ease-in-out active:border-lime-100 active:shadow-[0_0_0_1px_#69D3C1]">
             {children}
         </button> 
     );
@@ -32,7 +33,7 @@ export const BTNGhostShort : React.FC <ButtonProps> = ({onClick, title, children
         title={title}
         type={type}
         onClick={onClick}
-        className="cursor-pointer font-sans inline-flex max-w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
+        className="cursor-pointer font-sans inline-flex max-w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-sm text-[#05453D] font-normal mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
             {children}
         </button>
     )
@@ -46,7 +47,7 @@ export const BTNGhost : React.FC <ButtonProps> = ({onClick,title, children, type
         title={title}
         type={type}
         onClick={onClick}
-        className="cursor-pointer font-sans inline-flex max-w-md min-w-xs justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
+        className="cursor-pointer font-sans inline-flex w-md justify-center items-center gap-2 px-6 py-3 border-2 border-[#35C5B6] hover:border-[#00AF9C] rounded-lg text-[#05453D] font-normal text-lg  mx-auto transition-all duration-200  active:border-[#11BFAB] active:rounded-8xl active:shadow-[0_0_0_1px_#69D3C1]">
             {children}
         </button>
     )

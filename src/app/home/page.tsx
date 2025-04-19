@@ -1,4 +1,4 @@
-import NavMenu from "@/componentes/Layout/Navbar";
+import {NavMenu} from "@/componentes/Layout/Navbar";
 import HeroSection from "@/componentes/Layout/HeroSection";
 import SobreSection from "@/componentes/Layout/Sobre";
 import ServicosSection from "@/componentes/Layout/Servicos";

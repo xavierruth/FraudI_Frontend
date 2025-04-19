@@ -6,7 +6,7 @@ export default function ServicosSection () {
       <div className="justify-center flex-col md:flex-row mx-auto">
         <h2 className="font-serif text-center text-xl md:text-2xl font-semibold text-teal-500 mb-12">Serviços</h2>
         <h3 className="font-sans text-center text-xl sm:text-3xl font-bold text-teal-900 mb-4">Como o Fraudi te protege</h3>
-        <p className="font-sans text-slate-600 text-center max-w-4xl mx-auto mt-4 text-gray-700 text-base sm:text-lg mb-12">
+        <p className="font-sans text-slate-600 text-center max-w-4xl mx-auto mt-4 text-base sm:text-lg mb-12">
           Com tecnologia preditiva e uma interface simples, o Fraudi identifica possíveis fraudes com base no seu comportamento de uso do cartão e te entrega tudo isso em um painel claro e acessível.
         </p>
 
