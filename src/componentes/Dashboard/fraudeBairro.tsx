@@ -37,10 +37,10 @@ export default function FraudeBairro({ atualizar }: Props) {
   
 
   return (
-    <div className="grid grid-cols-1 gap-6 justify-center">
+    <div className="text-teal-700 grid grid-cols-1 gap-6 justify-center">
       <Card className="w-full h-auto mx-auto">
         <CardContent className="p-4 h-96">
-          <h2 className="text-lg font-semibold mb-2">Fraudes por Bairro</h2>
+          <h2 className="font-sans text-xl font-medium text-teal-900 mb-2">Fraudes por Bairro</h2>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={dadosFraudePorBairro}
@@ -64,7 +64,7 @@ export default function FraudeBairro({ atualizar }: Props) {
               />
               <Bar
                 dataKey="valor"
-                fill="#FF8042"
+                fill="#00C49F"
                 name="Quantidade de Fraudes"
               />
             </BarChart>

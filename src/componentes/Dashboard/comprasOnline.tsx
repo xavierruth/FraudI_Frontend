@@ -20,9 +20,9 @@ import {
     const total = dadosCompraOnline.reduce((acc, item) => acc + item.valor, 0);
   
     return (
-      <Card className="h-full w-full">
+      <Card className="h-full  w-full">
         <CardContent className="h-[500] flex flex-col">
-          <h2 className="text-lg font-semibold mb-4">Compras Online</h2>
+          <h2 className="font-sans text-xl font-medium text-teal-900 mb-4">Compras Online</h2>
           
           {/* Legenda personalizada */}
           <div className="mb-4 grid grid-cols-1 sm:grid-cols-2 gap-2">

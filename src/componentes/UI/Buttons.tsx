@@ -25,6 +25,18 @@ export const BTNPrimary: React.FC<ButtonProps> = ({onClick, children, type, disa
     );
 };
 
+export const BTNCTA : React.FC <ButtonProps> = ({onClick, children, type}) =>{
+    return (
+
+        <button 
+        type={type} 
+        onClick={onClick} 
+        className="cursor-pointer font-sans inline-flex w-full justify-center items-center gap-2 px-6 py-3 bg-teal-400 hover:bg-teal-700 hover:scale-[1.05] rounded-lg text-slate-900 hover:text-slate-50 text-lg font-normal mx-auto transition-all duration-400 ease-in-out active:border-lime-100">
+          { children }
+        </button>
+    )
+}
+
 //BTotão Secundário Pequeno
 
 export const BTNGhostShort : React.FC <ButtonProps> = ({onClick, title, children, type}) => {
@@ -92,15 +104,3 @@ export const BTNBurger : React.FC <ButtonProps> = ({onClick, children, type}) =>
     );
 };  
 
-
-export const BTNCTA : React.FC <ButtonProps> = ({title, type, onClick}) =>{
-    return (
-
-        <button 
-        type={type} 
-        onClick={onClick} 
-        className="px-6 py-2 bg-white text-emerald-700 font-semibold rounded-lg hover:bg-gray-100 transition">
-          { title }
-        </button>
-    )
-}

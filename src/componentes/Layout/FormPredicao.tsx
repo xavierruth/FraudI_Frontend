@@ -5,6 +5,7 @@ import { FieldItem } from "@/constants";
 import { BTNPrimary } from "../UI/Buttons";
 import { ArrowRight } from "lucide-react";
 import { enviarTransacaoFraude } from "@/service/fraudeservice";
+import Swal from "sweetalert2";
 
 
 type FormTransacao = {
@@ -60,10 +61,13 @@ export default function FormPredicao({
       // 🔍 Verifica o valor retornado pelo backend
       const isFraude = resposta.risco_fraude_previsto === 1;
   
-      alert(isFraude 
-        ? "🚨 A transação foi identificada como FRAUDE." 
-        : "✅ A transação NÃO é uma fraude."
-      );
+      Swal.fire({
+        title: isFraude ? '🚨 Fraude Detectada!' : '✅ Transação Segura',
+        text: isFraude
+          ? 'A transação foi identificada como FRAUDE.'
+          : 'A transação NÃO é uma fraude.',
+        confirmButtonText: 'OK',
+      });
   
       setFormData({
         compraOnline: "",

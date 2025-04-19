@@ -19,9 +19,9 @@ import {
     const { dadosFraudePorUsoChip } = useFraudeData(atualizar); // Certifique-se de que isso retorna os dados corretos
   
     return (
-        <Card className="col-span-2 w-full mx-auto">
+        <Card className="text-teal-700 col-span-2 w-full mx-auto">
           <CardContent className="p-4 h-96 w-full">
-            <h2 className="text-lg font-semibold mb-2">
+            <h2 className="font-sans text-xl font-medium text-teal-900 mb-2">
               Fraudes por Uso de Chip
             </h2>
             <ResponsiveContainer width="100%" height="100%">
@@ -37,7 +37,7 @@ import {
                 />
                 <Bar
                   dataKey="fraudes"
-                  fill="#8884d8"
+                  fill="#00C49F"
                   name="Quantidade de Fraudes"
                   barSize={40}
                 />

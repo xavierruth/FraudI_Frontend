@@ -30,28 +30,28 @@ export default function DistanciaTransacao({ atualizar }: Props) {
   ).toFixed(2);
 
   return (
-    <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+    <div className="w-full mx-auto text-teal-700 grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
       {/* Indicadores em linha ocupando col-span-2 */}
       <div className="flex flex-col lg:col-span-2">
         <div className="flex flex-col sm:flex-row gap-4">
           <Card className="flex-1">
             <CardContent className="p-4">
-              <p className="text-gray-500">Total de Fraudes</p>
-              <p className="text-red-600 font-bold text-lg">{totalFraudes}</p>
+              <p className="font-sans text-xl font-medium text-teal-900">Total de Fraudes</p>
+              <p className="font-sans font-normal text-red-600 text-lg">{totalFraudes}</p>
             </CardContent>
           </Card>
           <Card className="flex-1">
             <CardContent className="p-4">
-              <p className="text-gray-500">Total de Não Fraudes</p>
-              <p className="text-green-600 font-bold text-lg">
+              <p className="font-sans text-xl font-medium text-teal-900">Total de Não Fraudes</p>
+              <p className="font-sans font-normal text-green-600 text-lg">
                 {totalNaoFraudes}
               </p>
             </CardContent>
           </Card>
           <Card className="flex-1">
             <CardContent className="p-4">
-              <p className="text-gray-500">Média Distância da Casa</p>
-              <p className="text-blue-600 font-bold text-lg">
+              <p className="font-sans text-xl font-medium text-teal-900">Média Distância da Casa</p>
+              <p className="font-sans font-normal text-blue-600 text-lg">
                 {mediaDistancia} km
               </p>
             </CardContent>
@@ -61,8 +61,8 @@ export default function DistanciaTransacao({ atualizar }: Props) {
         {/* Gráfico principal */}
         <Card className="mt-4">
           <CardContent className="p-4 h-96 flex flex-col">
-            <h2 className="text-lg font-semibold mb-2">
-              Distância da Última Transação × Fraude
+            <h2 className="font-sans text-xl font-medium text-teal-900 mb-3">
+              Realção da distância da útlima transação com a fraude
             </h2>
             <div className="flex-1 relative">
               <ResponsiveContainer width="100%" height="100%">
@@ -99,7 +99,7 @@ export default function DistanciaTransacao({ atualizar }: Props) {
                   <Line
                     type="monotone"
                     dataKey="naoFraude"
-                    stroke="#008000"
+                    stroke="#00C49F"
                     name="Não Fraudes"
                   />
                   <Line
@@ -119,7 +119,7 @@ export default function DistanciaTransacao({ atualizar }: Props) {
       {/* Espaço reservado para outro gráfico */}
       <div className="lg:col-span-1 h-full">
         {/* Você pode adicionar outro Card aqui depois */}
-        <div className="h-full w-full bg-gray-100 rounded-xl border border-dashed border-gray-300 flex items-center justify-center text-gray-500">
+        <div className="h-full w-full bg-gray-100 rounded-xl border-teal-300 flex items-center justify-center text-teal-700">
           <ComprasOnline atualizar={atualizar} />
         </div>
       </div>

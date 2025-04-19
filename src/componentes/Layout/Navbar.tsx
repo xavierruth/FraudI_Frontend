@@ -16,7 +16,7 @@ export const NavMenu = () => {
     }
 
   return (
-    <nav className="sticky top-0 z-50 py-4 justify-between bg-[#f9f9fb] backdrop-blur-sm border-b border-[rgba(249,249,251,0.8)] shadow-xl/5">
+    <nav className="sticky top-0 z-50 py-4 justify-between bg-[#f9f9fb] backdrop-blur-sm border-b border-[rgba(249,249,251,0.8)] shadow-xl/2">
         <div className="container px mx-auto relative ">
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ export const NavDash = () => {
     }
 
   return (
-    <nav className="sticky z-10 top-0 py-4 justify-between bg-[#f9f9fb] backdrop-blur-sm border-b border-[rgba(249,249,251,0.8)] shadow-xl/5">
+    <nav className="sticky z-10 top-0 py-4 justify-between bg-[#f9f9fb] backdrop-blur-sm border-b border-[rgba(249,249,251,0.8)] shadow-xl/2">
         <div className="container px mx-auto relative ">
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-2">

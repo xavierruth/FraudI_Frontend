@@ -33,7 +33,7 @@ export const Modal: React.FC<ModalProps> = ({ isVisible, onClose, children }) =>
                 Realize uma nova consulta!
               </h2>
               <p className="font-sans text-slate-600 text-center max-w-4xl mx-auto text-base sm:text-base">
-                Descubra de uma vez por todas se você foi vítima ou não de FraudI
+                Descubra se você foi vítima ou não de fraude!!
               </p>
             </div>
             <div className="flex justify-center w-full">

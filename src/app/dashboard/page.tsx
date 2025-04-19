@@ -1,5 +1,5 @@
 "use client";
-import { BTNPrimary } from "@/componentes/UI/Buttons";
+import { BTNCTA } from "@/componentes/UI/Buttons";
 import { Modal } from "@/componentes/UI/Modal";
 import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
@@ -26,6 +26,7 @@ export default function Dashboard() {
     bairro: "",
   });
   const [contadorAtualizacao, setContadorAtualizacao] = useState(0);
+
   const carregarDados = async () => {
     try {
       const dados = await buscarTransacoes();
@@ -42,37 +43,43 @@ export default function Dashboard() {
   return (
     <>
       <NavDash />
-      <div className=" w-full min-h-screen bg-white p-10 text-center text-amber-900">
-        <div className="mb-4">
-          <div className="mb-4">
-            <BTNPrimary onClick={() => setshowModal(true)}>
-              <Plus />
-              Nova Consulta
-            </BTNPrimary>
-          </div>
-          <DistanciaTransacao atualizar={contadorAtualizacao} />
-          <div className="flex w-full gap-4">
-            <div className="w-8/12">
-              <FraudeBairro atualizar={contadorAtualizacao} />
-            </div>
-            <div className="w-4/12 flex">
-              <UsoChipFraudes atualizar={contadorAtualizacao} />
-            </div>
+      <div className="w-full min-h-screen bg-teal-50 p-10 text-center">
+        {/* Barra superior com título e botão */}
+        <div className="flex items-center justify-between rounded-md bg-white border border-teal-100 px-6 py-4 mb-6">
+          <h1 className="text-2xl font-semibold text-teal-900">Meu Dashboard</h1>
+          <div className="flex"> 
+          <BTNCTA onClick={() => setshowModal(true)}>
+            <Plus className="mr-2" size={18} />
+            Nova Consulta
+          </BTNCTA>
           </div>
         </div>
+
+        {/* Conteúdo principal */}
+        <DistanciaTransacao atualizar={contadorAtualizacao} />
+        <div className="flex w-full gap-4">
+          <div className="w-8/12">
+            <FraudeBairro atualizar={contadorAtualizacao} />
+          </div>
+          <div className="w-4/12 flex">
+            <UsoChipFraudes atualizar={contadorAtualizacao} />
+          </div>
+        </div>
+
+        {/* Modal de formulário */}
         <Modal isVisible={showModal} onClose={() => setshowModal(false)}>
           <FormPredicao
             formData={formData}
             setFormData={setFormData}
             onSubmit={async () => {
-              await carregarDados(); // Atualiza os dados
-              setContadorAtualizacao((prev) => prev + 1); // Gatilho para atualizar o gráfico
-              setshowModal(false); // Fecha o modal
+              await carregarDados();
+              setContadorAtualizacao((prev) => prev + 1);
+              setshowModal(false);
             }}
           />
         </Modal>
       </div>
-      <FooterSection/>
+      <FooterSection />
     </>
   );
 }

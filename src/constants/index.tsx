@@ -14,14 +14,13 @@ import user9 from "@/assets/testimonial-img/user9.png"
 export const NavItem = [
 
     {label: "Início", href: "/home"},
-    {label: "Sobre Nós", href: "#sobre"},
-    {label: "Serviços", href: "#servicos"}, 
-    {label: "Depoimentos", href: "#depoimentos"},
+    {label: "Sobre Nós", href: "/sobre"},
+    {label: "Serviços", href: "/servicos"}, 
+    {label: "Depoimentos", href: "/depoimentos"},
 ];
 
 export const NavItemDash = [
     {label: "Dashboard", href: "/dashboard"},
-    {label: "Sobre", href: "/sobre"}, 
     {label: "Voltar para Início", href: "/home"},
 ];
 
