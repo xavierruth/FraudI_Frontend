@@ -24,7 +24,7 @@ type FormTransacao = {
 type FormPredicaoProps = {
   formData: FormTransacao;
   setFormData: React.Dispatch<React.SetStateAction<FormTransacao>>;
-  onSubmit: () => void;
+  onSubmit: (dados: Record<string, string>) => void;
 };
 
 
@@ -59,7 +59,7 @@ export default function FormPredicao({
       const resposta = await enviarTransacaoFraude(dadosFormatados);
   
       // 🔍 Verifica o valor retornado pelo backend
-      const isFraude = resposta.risco_fraude_previsto === 1;
+      const isFraude = resposta.fraude === 1;
   
       Swal.fire({
         title: isFraude ? '🚨 Fraude Detectada!' : '✅ Transação Segura',

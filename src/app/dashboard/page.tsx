@@ -46,7 +46,7 @@ export default function Dashboard() {
       <div className="w-full min-h-screen bg-teal-50 p-10 text-center">
         {/* Barra superior com título e botão */}
         <div className="flex items-center justify-between rounded-md bg-white border border-teal-100 px-6 py-4 mb-6">
-          <h1 className="text-2xl font-semibold text-teal-900">Meu Dashboard</h1>
+          <h1 className="text-2xl font-serif font-semibold text-teal-600">FraudI Dashboard</h1>
           <div className="flex"> 
           <BTNCTA onClick={() => setshowModal(true)}>
             <Plus className="mr-2" size={18} />

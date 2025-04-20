@@ -60,7 +60,7 @@ export default function FraudeBairro({ atualizar }: Props) {
               <XAxis type="number" />
               <YAxis
                 type="category"
-                dataKey="bairro"
+                dataKey="nome"
                 width={50}
                 tick={(props) => <CustomYAxisTick {...props} />}
                 interval={0}

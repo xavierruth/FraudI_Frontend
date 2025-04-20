@@ -242,7 +242,7 @@ export function useFraudeData(atualizar: number) {
           },
         ]);
         const dadosBairro = Object.entries(fraudePorBairro)
-          .map(([bairro, valor]) => ({ bairro, valor })) // <- nome em vez de bairro
+          .map(([bairro, valor]) => ({nome: bairro, valor })) // <- nome em vez de bairro
           .sort((a, b) => b.valor - a.valor);
 
         setDadosFraudePorBairro(dadosBairro);
