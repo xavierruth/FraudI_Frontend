@@ -11,13 +11,22 @@ import {
 import { Card, CardContent } from "@/componentes/UI/card";
 import { useFraudeData } from "@/componentes/Dashboard/useFraudeData";
 
+
+interface CustomTickProps {
+  x: number;
+  y: number;
+  payload: {
+    value: string;
+  };
+}
+
 interface Props {
   atualizar: number;
 }
 
 export default function FraudeBairro({ atualizar }: Props) {
   const { dadosFraudePorBairro } = useFraudeData(atualizar);
-  const CustomYAxisTick = ({ x, y, payload }: any) => {
+  const CustomYAxisTick = ({ x, y, payload }: CustomTickProps) => {
     return (
       <text
         x={x}
@@ -53,7 +62,7 @@ export default function FraudeBairro({ atualizar }: Props) {
                 type="category"
                 dataKey="bairro"
                 width={50}
-                tick={<CustomYAxisTick />}
+                tick={(props) => <CustomYAxisTick {...props} />}
                 interval={0}
               />
               <Tooltip />
