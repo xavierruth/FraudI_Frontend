@@ -12,6 +12,10 @@ export default function CadForm () {
     const handlehome = () => {
       router.push("/home")
     }
+
+    const handlelogin = () => {
+      router.push("/login")
+    }
     
   return (
     <div className="bg-[#F8FEFD] w-full h-full flex flex-col items-center justify-center space-y-6">
@@ -62,7 +66,7 @@ export default function CadForm () {
           </div>
           <div className="space-y-4 mt-10">
             <div className="space-y-3 flex flex-col items-center">
-              <BTNPrimary type="submit">Cadastre-se</BTNPrimary>
+              <BTNPrimary type="submit" onClick={handlelogin}>Cadastre-se</BTNPrimary>
             </div>
             <div className="flex justify-center">
               <BTNText type="button" onClick={handlehome}>
